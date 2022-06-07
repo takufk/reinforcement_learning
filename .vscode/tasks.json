@@ -1,0 +1,24 @@
+{
+    "detail": "Build project with debug configuration.",
+    "tasks": [
+      {
+        "type": "cppbuild",
+        "label": "C/C++: build project on Linux (debug)",
+        "command": "sh",
+        "args": [
+            "doDebugBuild.sh"
+        ],
+        "options": {
+            "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": [
+            "$gcc"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        },
+      }
+    ],
+    "version": "2.0.0"
+}
