@@ -11,16 +11,16 @@ class NArmedBandit
 {
 private:
     const int M_n_arms;
-    const std::vector< const double > M_win_probs;
-    const std::vector< const double > M_rewards;
+    const std::vector< double > M_win_probs;
+    const std::vector< double > M_rewards;
 
 public:
     NArmedBandit( const int n_arms,
-                  const std::vector< const double > win_probs,
-                  const std::vector< const double > rewards )
+                  const std::vector< double > win_probs,
+                  const std::vector< double > rewards )
     : M_n_arms( n_arms ),
       M_win_probs( win_probs ),
-      M_rewards( M_rewards )
+      M_rewards( rewards )
     {
         if ( M_n_arms != M_win_probs.size() 
              || M_n_arms != M_rewards.size() )
