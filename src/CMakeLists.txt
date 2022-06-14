@@ -5,6 +5,7 @@ add_library(environments
     SHARED
     abstract_environment.h
     n_armed_bandit_problem.cpp
+    reinforcement_learning.cpp
 )
 
 # target_include_directories(environments
